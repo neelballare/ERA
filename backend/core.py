@@ -1,0 +1,27 @@
+from enum import StrEnum
+
+class Role(StrEnum):
+    DISPATCHER = "dispatcher"
+    AMBULANCE = "ambulance"
+    HOSPITAL = "hospital"
+
+class CaseStatus(StrEnum):
+    CREATED = "CREATED"
+    RANKING = "RANKING"
+    AWAITING_CONFIRMATION = "AWAITING_CONFIRMATION"
+    REALLOCATING = "REALLOCATING"
+    ASSIGNED = "ASSIGNED"
+    EN_ROUTE = "EN_ROUTE"
+    AT_HOSPITAL = "AT_HOSPITAL"
+    COMPLETED = "COMPLETED"
+    CANCELLED = "CANCELLED"
+    NO_HOSPITAL = "NO_HOSPITAL"
+
+class RequestStatus(StrEnum):
+    PENDING = "PENDING"
+    STANDBY = "STANDBY"
+    ACCEPTED = "ACCEPTED"
+    REJECTED = "REJECTED"
+    EXPIRED = "EXPIRED"
+    CANCELLED = "CANCELLED"
+    CONFLICT = "CONFLICT"

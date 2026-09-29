@@ -1,0 +1,6 @@
+backend/era.db
+backend/__pycache__/
+frontend/node_modules/
+frontend/dist/
+*.pyc
+.venv
